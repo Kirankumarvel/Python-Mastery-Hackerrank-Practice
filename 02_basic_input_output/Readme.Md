@@ -25,10 +25,8 @@ You need to:
 ## 🧾 Input Format
 
 ```
-
-First line: integer a
+First line: integer a  
 Second line: integer b
-
 ```
 
 ---
@@ -36,10 +34,8 @@ Second line: integer b
 ## 📤 Output Format
 
 ```
-
-First line: result of integer division a // b
+First line: result of integer division a // b  
 Second line: result of float division a / b
-
 ```
 
 ---
@@ -47,20 +43,16 @@ Second line: result of float division a / b
 ## 🧪 Sample Input
 
 ```
-
 4
 3
-
 ```
 
 ### ✅ Sample Output
 
 ```
-
 1
 1.3333333333333333
-
-````
+```
 
 ---
 
@@ -82,7 +74,7 @@ if __name__ == '__main__':
 
     print(a // b)      # Integer division: no decimals
     print(a / b)       # Float division: includes decimals
-````
+```
 
 ---
 
@@ -117,8 +109,6 @@ python-mastery-hackerrank-practice/
 
 This script is open-sourced under the MIT License.
 
-
 ---
 
 Let me know if you'd like this saved as an actual `.md` file or if you want to add automated test cases next!
-```
