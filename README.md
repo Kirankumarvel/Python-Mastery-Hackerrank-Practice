@@ -15,8 +15,8 @@ To provide hands-on Python practice across various topics ranging from the basic
 ```bash
 python-mastery-hackerrank-practice/
 │
-├── 01_basic_input_output/
-├── 02_data_structures/
+├── 01_IF_Else/
+├── 02_basic_input_output/
 ├── 03_functions/
 
 ├── README.md
