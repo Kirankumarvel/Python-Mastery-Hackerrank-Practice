@@ -1,89 +1,96 @@
-# 🥈 Runner-Up Score Finder
+# 🥈 Runner-Up Score – Python
 
-This Python script takes a list of participant scores from a sports event and determines the **runner-up** (second highest) score.
-
----
-
-## 📌 Problem Statement
-
-You're given the scores of participants in a sports competition. Your task is to:
-
-* Read `n` scores from input.
-* Print the second-highest (runner-up) score.
+This Python script reads a list of scores from standard input and prints the **runner-up score** — the second highest unique value in the list.
 
 ---
 
-## 🧾 Input Format
+## 📝 Problem Description
 
-* The first line contains an integer `n` — the number of scores.
-* The second line contains `n` space-separated integers — the participant scores.
+Given the participants' score sheet for a university sports day, you are required to find the **runner-up score**.
+
+---
+
+## 📥 Input Format
+
+* The first line contains an integer `n`: the number of scores.
+* The second line contains `n` space-separated integers representing the scores.
+
+---
+
+## 📤 Output Format
+
+Print the runner-up score (second highest unique score).
 
 ---
 
 ## ✅ Constraints
 
-* `2 <= n <= 100`
+* `2 <= n <= 10`
 * `-100 <= score <= 100`
+* No duplicate values for the top two scores.
 
 ---
 
-## 🧮 Output Format
+## 🔍 Example
 
-Print the **runner-up score** (second highest unique value).
-
----
-
-## ▶️ Sample Input
+**Input**
 
 ```
-5
+5  
 2 3 6 6 5
 ```
 
-## 🟢 Sample Output
+**Output**
 
 ```
 5
 ```
 
----
+**Explanation**
 
-## 🧠 Explanation
-
-* The list of scores: `[2, 3, 6, 6, 5]`
-* The highest score is `6`, appearing twice.
-* The second-highest score is `5`, so that's the runner-up.
+* Scores: `[2, 3, 6, 6, 5]`
+* Highest score: `6`
+* Runner-up: `5` (second highest)
 
 ---
 
-## 🛠️ How It Works
+## 🧠 Code Explanation
 
-The script:
+```python
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    highest = max(arr)
+    filtered = [x for x in arr if x != highest]
+    print(max(filtered))
+```
 
-1. Reads the input.
-2. Converts the scores to a list.
-3. Removes all instances of the highest score.
-4. Finds the new highest score (runner-up).
+### 🔹 Step-by-step:
+
+* `n = int(input())`: reads the number of scores.
+* `arr = list(map(int, input().split()))`: reads and converts scores to a list of integers.
+* `highest = max(arr)`: finds the maximum score.
+* `filtered = [x for x in arr if x != highest]`: removes all instances of the highest score.
+* `print(max(filtered))`: prints the second highest score.
 
 ---
 
-## 💻 File Structure
+## 🗂️ File Structure
 
 ```
 10_runner_up_score/
-├── README.md
-└── runner_up.py
+├── runner_up.py
+└── README.md
 ```
 
 ---
 
-## 🚀 Usage
-
-Run the script in a terminal:
+## 🚀 How to Run
 
 ```bash
 python runner_up.py
 ```
 
-Then input the number of participants and their scores when prompted.
+Provide input when prompted or pipe it from a file.
 
+---
