@@ -1,16 +1,3 @@
-### 📁 File Structure
-
-```
-13_tuples/
-├── tuple_hash.py
-└── README.md
-```
-
----
-
-### 📄 README.md
-
-```markdown
 # 🧮 Tuple Hash Calculator
 
 This simple Python script reads a list of integers from input, stores them in a tuple, and prints the hash of the tuple using Python's built-in `hash()` function.
