@@ -110,7 +110,7 @@ if __name__ == '__main__':
 ## 📂 Folder Structure
 
 ```
-16_student_average/
+15_student_average/
 ├── average_marks.py
 └── README.md
 ```
